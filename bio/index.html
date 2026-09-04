@@ -236,6 +236,14 @@
   }
   .arrow{display:grid;place-items:center;color:var(--gold)}
   .arrow svg{width:18px;height:18px}
+  @media (max-width:520px){
+    .link-card{grid-template-columns:56px minmax(0,1fr) 16px;gap:14px;padding:18px 16px;align-items:start}
+    .card-thumb{width:56px;height:56px;border-radius:14px;margin-top:2px}
+    .card-text h2{font-size:20px;line-height:1.15;margin-bottom:6px}
+    .card-text p{font-size:13.5px;line-height:1.45}
+    .arrow{align-self:center}
+    .badge{right:14px;top:-12px;padding:7px 12px;font-size:10px}
+  }
 
   footer{
     text-align:center;
